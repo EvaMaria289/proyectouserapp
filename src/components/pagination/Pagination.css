@@ -5,8 +5,8 @@
 }
 
 select {
-    background-color: #1e8fa0;
-    color: rgb(162, 255, 22);
+    background-color: #555a88;
+    color: white;
 }
 
 .pagination {
@@ -14,21 +14,21 @@ select {
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .btnPages {
     border-radius: 50%;
-    background-color: #1e8fa0;
-    color: rgb(162, 255, 22);
+    background-color: rgb(76, 148, 219);
+    color: white;
     border: none;
     margin: 3px;
     cursor: pointer;
 }
 
 .btnBackNext {
-    background-color: #1e8fa0;
-    color: rgb(162, 255, 22);
+    background-color: rgb(76, 148, 219);
+    color: white;
     border: none;
     margin: 3px;
     border-radius: 10px;
@@ -36,5 +36,5 @@ select {
 }
 
 .btnBackNext:active {
-    background-color: #14616d;
+    background-color: #D93F3F;
 }

@@ -4,13 +4,14 @@
     margin-top: 15px;
     background-color: #474c7a;
     color: white;
-    /* position: fixed;
-    bottom: 0px; */
+    position: fixed;
+    bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: end;
     gap: 20px;
     padding-top: 5px;
+    z-index: 5;
 }
 
 .Image {

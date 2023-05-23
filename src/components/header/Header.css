@@ -3,9 +3,11 @@ Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #D93F3F;
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 Header>button {

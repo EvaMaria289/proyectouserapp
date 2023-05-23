@@ -16,14 +16,14 @@ import Footer from './components/footer/Footer'
 
 function App() {
   const [isVisible, setIsVisible] = useState(false)
-  const [users, setUsers] = useState(null)
+  const [users, setUsers] = useState([])
   const formRef = useRef(null);
   const [isEditing, setIsEditing] = useState(false)
   const [initialData, setInitialData] = useState(null)
 
-  //const [quatityPagination, setQuatityPagination] = useState(10);
+  const [quatityPagination, setQuatityPagination] = useState(10);
 
-  //const [pageNumber, listSlice, pages, changePageTo] = usePagination(users, quatityPagination)
+  const [pageNumber, listSlice, pages, changePageTo] = usePagination(users, quatityPagination)
 
 
   const loadData = async () =>{
@@ -91,17 +91,17 @@ function App() {
         </Modal>
 
         <div className="userList">
-        {users? users.map(user=> 
+        {listSlice? listSlice.map(user=> 
         
             <UserCard user={user} key={user.id} deleteHandle={deleteHandle} editHandle={loadUserToForm}/>
 
         ) : <p>No users to show</p>}
         </div>
 
-        {/* <Pagination pages ={pages} 
+        <Pagination pages ={pages} 
         changePageTo={changePageTo} 
         pageNumber={pageNumber} 
-        setQuatityPagination={setQuatityPagination}/>  */}
+        setQuatityPagination={setQuatityPagination}/> 
 
         <Footer/>
     </>
