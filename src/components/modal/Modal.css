@@ -1,0 +1,24 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.658);
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+
+/* Userlist */
+
+.userList {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+}

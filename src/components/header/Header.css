@@ -1,0 +1,28 @@
+Header {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0px;
+}
+
+Header>button {
+    background-color: #555a88;
+    width: 227px;
+    height: 35px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    Header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+}

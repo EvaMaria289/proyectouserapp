@@ -1,0 +1,47 @@
+.footer {
+    height: 30px;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #474c7a;
+    color: white;
+    /* position: fixed;
+    bottom: 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+    padding-top: 5px;
+}
+
+.Image {
+    width: 22px;
+    height: 22px;
+}
+
+.footer>p {
+    text-align: center;
+    font-size: medium;
+    line-height: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .footer {
+        height: 4%;
+        padding-top: 5px;
+    }
+    .Image {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .footer {
+        height: 4%;
+        padding-top: 5px;
+    }
+    .Image {
+        width: 18px;
+        height: 18px;
+    }
+}
