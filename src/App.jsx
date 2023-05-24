@@ -4,7 +4,6 @@ import Header from './components/header/Header'
 import Modal from './components/modal/Modal'
 import getUser from './services/getUser'
 import createUser from './services/createUser'
-import UserCard from './components/userCard/UserCard'
 import deleteUser from './services/deleteUser'
 import updateUser from './services/updateUser'
 import UserForm from './components/userForm/UserForm'
@@ -13,8 +12,8 @@ import { ToastContainer} from 'react-toastify'
 import Pagination from './components/pagination/Pagination';
 import { usePagination } from './hooks/usePagination'
 import Footer from './components/footer/Footer'
-import Loading from './components/loading/Loading'
 import ModalDelete from './components/modalDelete/ModalDelete'
+import UserList from './components/userList/userList'
 
 function App() {
   const [isVisible, setIsVisible] = useState(false)
@@ -100,14 +99,8 @@ function App() {
           isEditing={isEditing}/>
         </Modal>
 
-        <div className="userList">
-        {listSlice? listSlice.map(user=> 
-        
-            <UserCard user={user} key={user.id} modalDelete={modalDelete} editHandle={loadUserToForm}/>
 
-          // ) :   <Loading/> }
-         ) : <p>No users to show</p>} 
-        </div>
+        <UserList listSlice={listSlice} modalDelete={modalDelete} loadUserToForm={loadUserToForm} />
 
         <Pagination pages ={pages} 
         changePageTo={changePageTo} 

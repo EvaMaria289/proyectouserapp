@@ -50,7 +50,7 @@ const UserForm = ({modalHandle, formRef, create, initialData, isEditing}) =>{
                     <label htmlFor="birthday">Birthday</label>
                     <input type="date" id="birthday" {...register("birthday")}/>
                     </div>
-                    <input type="submit"  className="btnSubmit" value={isEditing?"Edit user" :"Create a new user"}/>
+                    <input type="submit"  className="btnSubmit" value={isEditing?"Save changes" :"Create a new user"}/>
                 </form>
         </div>
     );
