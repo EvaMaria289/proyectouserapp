@@ -5,7 +5,6 @@ import { useState, useEffect, useRef} from 'react'
 const UserForm = ({modalHandle, formRef, create, initialData, isEditing}) =>{
     const{register, handleSubmit, reset} = useForm({defaultValues: initialData});
 
-       ///
        const [openEye, setOpenEye] = useState(false)
     const showPassword = () =>{
 

@@ -6,12 +6,14 @@ const UserList = ({listSlice,modalDelete, loadUserToForm}) =>{
     return(
     <>
             <div className="userList">
-        {listSlice? listSlice.map(user=> 
+        {listSlice != 0? listSlice.map(user=> 
         
             <UserCard user={user} key={user.id} modalDelete={modalDelete} editHandle={loadUserToForm}/>
 
-        ) :   <Loading/> }
-         {/* ) : <p>No users to show</p>}  */}
+         ) : <div className="loadingContainer"> 
+                <h1>No users to show</h1> 
+                <Loading/> 
+            </div> }
         </div>
     </>
     )

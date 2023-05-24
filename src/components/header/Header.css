@@ -20,6 +20,16 @@ Header>button {
     border-radius: 5px;
 }
 
+.registeredUsers {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: bold;
+    color: #D93F3F;
+    text-align: end;
+    padding-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
 @media (min-width: 320px) and (max-width: 576px) {
     Header {
         display: flex;
