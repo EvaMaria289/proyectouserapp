@@ -2,11 +2,14 @@
     margin-top: 5px;
     display: flex;
     justify-content: center;
+    /* background-color: aqua; */
 }
 
 select {
     background-color: #555a88;
     color: white;
+    /* position: absolute;
+    bottom: 60px; */
 }
 
 .pagination {
@@ -15,6 +18,8 @@ select {
     flex-wrap: wrap;
     margin: 10px;
     margin-bottom: 40px;
+    /* position: absolute;
+    bottom: 40px; */
 }
 
 .btnPages {

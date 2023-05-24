@@ -13,6 +13,7 @@ import { ToastContainer} from 'react-toastify'
 import Pagination from './components/pagination/Pagination';
 import { usePagination } from './hooks/usePagination'
 import Footer from './components/footer/Footer'
+import Loading from './components/loading/Loading'
 
 function App() {
   const [isVisible, setIsVisible] = useState(false)
@@ -95,7 +96,8 @@ function App() {
         
             <UserCard user={user} key={user.id} deleteHandle={deleteHandle} editHandle={loadUserToForm}/>
 
-        ) : <p>No users to show</p>}
+          // ) :   <Loading/> }
+         ) : <p>No users to show</p>} 
         </div>
 
         <Pagination pages ={pages} 
