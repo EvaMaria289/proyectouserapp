@@ -8,7 +8,7 @@ const Header = ({modalHandle, users}) =>{
           <button onClick={modalHandle}><i className="fa-regular fa-plus"></i> Create new user</button>
           
         </header>
-        <p className="registeredUsers">{users.length} registered users</p>
+        {users !=0 && <p className="registeredUsers">{users.length} registered users</p>} 
       </>
     );
 }

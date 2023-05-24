@@ -24,8 +24,6 @@ function App() {
   const [deleteConfirmModal, setdeleteConfirmModal] = useState(false);
   const [deletedUser, setDeletedUser] = useState(null)
   const [quatityPagination, setQuatityPagination] = useState(10);
-
-  
   const [pageNumber, listSlice, pages, changePageTo] = usePagination(users, quatityPagination)
 
 
@@ -46,6 +44,12 @@ function App() {
       loadData();
       modalHandle();
    }
+
+   const createValidation = () =>{
+    setIsEditing(false)
+    modalHandle();
+  }
+
   const create = async (data)=>{
     await createUser(data)
     loadData();
@@ -62,6 +66,12 @@ function App() {
       loadData(); 
   }
 
+  const loadUserToForm = (user) =>{
+     setIsEditing(true)
+      modalHandle();
+      setInitialData(user)  
+  }
+
   const modalHandle = () =>{
     if(isVisible){
       setIsVisible(false)
@@ -70,15 +80,6 @@ function App() {
     else{
       setIsVisible(true)
     }
-  }
-  const createValidation = () =>{
-      setIsEditing(false)
-      modalHandle();
-  }
-  const loadUserToForm = (user) =>{
-     setIsEditing(true)
-      modalHandle();
-      setInitialData(user)  
   }
 
   useEffect(()=>{
@@ -99,9 +100,7 @@ function App() {
           isEditing={isEditing}/>
         </Modal>
 
-
         <UserList listSlice={listSlice} modalDelete={modalDelete} loadUserToForm={loadUserToForm} />
-
 
         {listSlice &&   
         <Pagination pages ={pages} 
@@ -109,8 +108,6 @@ function App() {
         pageNumber={pageNumber} 
         setQuatityPagination={setQuatityPagination}/>}
         
-
-
         <Footer/>
     </>
   )

@@ -37,4 +37,7 @@ Header>button {
         justify-content: center;
         gap: 15px;
     }
+    .registeredUsers {
+        text-align: center;
+    }
 }
