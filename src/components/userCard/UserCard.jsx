@@ -1,6 +1,6 @@
 import "./UserCard.css";
 
-const UserCard = ({user, id, deleteHandle, editHandle}) =>{
+const UserCard = ({user, id, modalDelete, editHandle}) =>{
     return(
     <>
         <div className="user_card" key={id}>
@@ -18,7 +18,7 @@ const UserCard = ({user, id, deleteHandle, editHandle}) =>{
             </div>
           </div>
           <div className="formBtn">
-            <button className="btnDelete" onClick={()=> deleteHandle(user)}><i className="fa-solid fa-trash-can"></i></button>
+            <button className="btnDelete" onClick={()=> modalDelete(user)}><i className="fa-solid fa-trash-can"></i></button>
             <button className="btnEdit" onClick={()=> editHandle(user)}><i className="fa-solid fa-pen"></i></button>
           </div>
         </div>

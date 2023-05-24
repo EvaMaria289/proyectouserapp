@@ -14,6 +14,7 @@ import Pagination from './components/pagination/Pagination';
 import { usePagination } from './hooks/usePagination'
 import Footer from './components/footer/Footer'
 import Loading from './components/loading/Loading'
+import ModalDelete from './components/modalDelete/ModalDelete'
 
 function App() {
   const [isVisible, setIsVisible] = useState(false)
@@ -21,9 +22,11 @@ function App() {
   const formRef = useRef(null);
   const [isEditing, setIsEditing] = useState(false)
   const [initialData, setInitialData] = useState(null)
-
+  const [deleteConfirmModal, setdeleteConfirmModal] = useState(false);
+  const [deletedUser, setDeletedUser] = useState(null)
   const [quatityPagination, setQuatityPagination] = useState(10);
 
+  
   const [pageNumber, listSlice, pages, changePageTo] = usePagination(users, quatityPagination)
 
 
@@ -50,10 +53,14 @@ function App() {
 
   }
 
+  const modalDelete = (user) =>{
+      setdeleteConfirmModal(true)
+      setDeletedUser(user)
+  }
   const deleteHandle = async(user) =>{
       await deleteUser(user.id);
-      loadData();
-      
+      setdeleteConfirmModal(false)
+      loadData(); 
   }
 
   const modalHandle = () =>{
@@ -84,6 +91,8 @@ function App() {
     <ToastContainer/>
         <Header modalHandle={createValidation} setIsEditing={setIsEditing} />
 
+       {deleteConfirmModal &&  <ModalDelete setdeleteConfirmModal={setdeleteConfirmModal} deletedUser={deletedUser} deleteHandle={deleteHandle}/>}
+
         <Modal isVisible={isVisible} >
           <UserForm  modalHandle={modalHandle} 
           formRef={formRef} create={createOrUpdate} 
@@ -94,7 +103,7 @@ function App() {
         <div className="userList">
         {listSlice? listSlice.map(user=> 
         
-            <UserCard user={user} key={user.id} deleteHandle={deleteHandle} editHandle={loadUserToForm}/>
+            <UserCard user={user} key={user.id} modalDelete={modalDelete} editHandle={loadUserToForm}/>
 
           // ) :   <Loading/> }
          ) : <p>No users to show</p>} 

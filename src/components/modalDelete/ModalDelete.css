@@ -1,0 +1,80 @@
+.bigModal {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d93f3f8e;
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    z-index: 5;
+}
+
+.modalDelete {
+    height: 200px;
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 0 10px 10px rgb(76, 148, 219);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.userIcon {
+    color: #D93F3F;
+    font-size: 50px;
+    text-align: center;
+}
+
+.btnDeleteModal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btnDeleteModal>button {
+    height: 30px;
+    width: 90px;
+    border-radius: 6px;
+    cursor: pointer
+}
+
+.btnDeleteModal>button:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.btnDeleteModal button:nth-child(1) {
+    background-color: rgb(76, 148, 219);
+    color: white;
+    border: 1px solid rgb(29, 77, 124);
+    transition: 0.3s;
+}
+
+.btnDeleteModal button:nth-child(1):active {
+    background-color: rgb(29, 77, 124);
+}
+
+.btnDeleteModal button:nth-child(2) {
+    background-color: #D93F3F;
+    border: 1px solid rgb(124, 24, 24);
+    ;
+    color: white;
+    transition: 0.3s;
+}
+
+.btnDeleteModal button:nth-child(2):active {
+    background-color: #861d1d;
+    ;
+}
