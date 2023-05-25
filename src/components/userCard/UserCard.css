@@ -62,4 +62,6 @@
     text-align: center;
     border-color: lightgray;
     cursor: pointer;
+    color: white;
+    background-color: rgb(76, 148, 219);
 }
