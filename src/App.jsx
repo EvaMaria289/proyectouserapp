@@ -82,10 +82,6 @@ function App() {
     }
   }
 
-  window.document.addEventListener("click", (e)=>{
-    console.log(e.target)
-  })
-
   useEffect(()=>{
     loadData();
   },[]);
