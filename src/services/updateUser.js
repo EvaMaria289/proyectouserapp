@@ -3,7 +3,7 @@ import axiosInstance from "../api/axiosInstance"
 
 const updateUser = async(id, data) => {
     try {
-        await axiosInstance.patch(`/users/${id}/`, data);
+        await axiosInstance.put(`/users/${id}/`, data);
         toast.success("user UPDATED successfully")
     } catch (error) {
         console.log(error)
