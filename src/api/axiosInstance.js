@@ -1,5 +1,5 @@
 import axios from "axios";
 
-const axiosInstance = axios.create({ baseURL: "https://user-api-djec.onrender.com/" });
+const axiosInstance = axios.create({ baseURL: "http://users-crud.academlo.tech/" });
 
 export default axiosInstance;
