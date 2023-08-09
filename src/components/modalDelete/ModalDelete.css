@@ -1,7 +1,7 @@
 .bigModal {
     width: 100vw;
     height: 100vh;
-    background-color: #d93f3f8e;
+    background-color: #4402588e;
     position: absolute;
     inset: 0;
     backdrop-filter: blur(2px);
@@ -20,7 +20,7 @@
     color: black;
     background-color: white;
     position: relative;
-    box-shadow: 0 0 10px 10px rgb(76, 148, 219);
+    box-shadow: 0 0 10px 10px rgb(61, 11, 90);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
 }
 
 .userIcon {
-    color: #D93F3F;
+    color: #4d0675;
     font-size: 50px;
     text-align: center;
 }
@@ -56,9 +56,9 @@
 }
 
 .btnDeleteModal button:nth-child(1) {
-    background-color: rgb(76, 148, 219);
+    background-color: rgb(97, 10, 138);
     color: white;
-    border: 1px solid rgb(29, 77, 124);
+    border: 1px solid rgb(14, 18, 22);
     transition: 0.3s;
 }
 
@@ -67,8 +67,8 @@
 }
 
 .btnDeleteModal button:nth-child(2) {
-    background-color: #D93F3F;
-    border: 1px solid rgb(124, 24, 24);
+    background-color: #f80606;
+    border: 1px solid rgb(7, 0, 0);
     ;
     color: white;
     transition: 0.3s;

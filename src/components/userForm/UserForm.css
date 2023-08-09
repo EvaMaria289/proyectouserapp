@@ -3,7 +3,7 @@
     height: 500px;
     width: 300px;
     position: relative;
-    box-shadow: 0 0 10px 10px rgb(76, 148, 219);
+    box-shadow: 0 0 10px 10px rgb(48, 5, 51);
     border-radius: 10px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .modalCLoser {
-    background-color: #D93F3F;
+    background-color: #e00707;
     color: white;
     font-size: medium;
     height: 17px;
@@ -62,7 +62,7 @@ div>input {
 
 div>input:focus {
     outline: unset;
-    border: 2px solid rgb(76, 148, 219);
+    border: 2px solid rgb(115, 6, 165);
 }
 
 .password {
@@ -79,7 +79,7 @@ div>input:focus {
 }
 
 .btnSubmit {
-    background-color: #555a88;
+    background-color: #54217e;
     width: 250px;
     height: 35px;
     font-size: 16px;

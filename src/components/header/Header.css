@@ -3,7 +3,7 @@ Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #D93F3F;
+    color: #5b0d9b;
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 0px;
@@ -11,7 +11,7 @@ Header {
 }
 
 Header>button {
-    background-color: #555a88;
+    background-color: #54217e;
     width: 227px;
     height: 35px;
     font-size: 16px;
@@ -24,7 +24,7 @@ Header>button {
     margin-left: 40px;
     margin-right: 40px;
     font-weight: bold;
-    color: #D93F3F;
+    color: #2ec508;
     text-align: end;
     padding-bottom: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif

@@ -8,10 +8,10 @@ const Footer = () => {
     <>
 
     <div className="footer">
-            <a href="https://wa.me/8297213784?text=¡Estoy+interesado!"><img src={whatsappImage} className="Image"/></a>
-           <a href="https://msng.link/o?@lerc7689=ig"><img src={igImage} className="Image"/></a>
+            <a href="https://wa.me/+584266809739?text=¡Estoy+interesado!"><img src={whatsappImage} className="Image"/></a>
+           <a href="https://msng.link/o?@evamaria.gl=ig"><img src={igImage} className="Image"/></a>
      
-            <p>Created by Luis E. Ramirez C. 2023®</p>
+            <p>Created by Eva M. Gutierrez 2023®</p>
       </div>
     </>);
 }

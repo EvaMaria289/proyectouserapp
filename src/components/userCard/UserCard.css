@@ -10,8 +10,8 @@
 }
 
 .user_card:hover {
-    border: 3px solid rgb(76, 148, 219);
-    box-shadow: 0 0 10px 5px rgb(76, 148, 219);
+    border: 3px solid rgb(97, 26, 145);
+    box-shadow: 0 0 10px 5px rgb(49, 4, 70);
     transform: translateY(-5px);
     transition: 0.5s;
     position: relative;
@@ -60,8 +60,8 @@
     height: 30px;
     border-radius: 5px;
     text-align: center;
-    border-color: rgb(76, 148, 219);
+    border-color: rgb(81, 23, 107);
     cursor: pointer;
     color: white;
-    background-color: rgb(76, 148, 219);
+    background-color: rgb(59, 7, 71);
 }

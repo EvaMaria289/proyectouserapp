@@ -89,8 +89,7 @@ function App() {
   return (
     <>
     <ToastContainer/>
-        <Header modalHandle={createValidation} setIsEditing={setIsEditing} users={users}/>
-
+       <Header modalHandle={createValidation} setIsEditing={setIsEditing} users={users}/>
        {deleteConfirmModal &&  <ModalDelete setdeleteConfirmModal={setdeleteConfirmModal} deletedUser={deletedUser} deleteHandle={deleteHandle}/>}
 
         <Modal isVisible={isVisible} >

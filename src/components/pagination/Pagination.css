@@ -5,7 +5,7 @@
 }
 
 select {
-    background-color: #555a88;
+    background-color: #54217e;
     color: white;
     position: absolute;
     bottom: 70px;
@@ -24,7 +24,7 @@ select {
 
 .btnPages {
     border-radius: 50%;
-    background-color: rgb(76, 148, 219);
+    background-color: rgb(140, 18, 189);
     color: white;
     border: none;
     margin: 3px;
@@ -32,7 +32,7 @@ select {
 }
 
 .btnBackNext {
-    background-color: rgb(76, 148, 219);
+    background-color: rgb(122, 21, 168);
     color: white;
     border: none;
     margin: 3px;
@@ -41,5 +41,5 @@ select {
 }
 
 .btnBackNext:active {
-    background-color: #D93F3F;
+    background-color: #610464;
 }
